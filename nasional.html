@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Amikom News Corporation">
+  <link rel="shortcut icon" href="images/icon web.jpg" type="image/x-icon">
+  <title>ANC - Berita Terbaru, Terkini, dan Dunia</title>
+
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* hover link */
+    .card-text:hover {
+      color: red;
+    }
+
+    /* Membuat Hover scale */
+    .cardho {
+      overflow: hidden;
+    }
+
+    .cardho:hover img {
+      transform: scale(1.1);
+      transition: all .3s ease-in;
+    }
+  </style>
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Banner Atas -->
+  <div id="leaderboard" class="leaderboard">
+    <div class="leaderboard_container">
+      <img src="images/banner.png" alt="banner" width="100%" class="img-fluid">
+    </div>
+  </div>
+
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg bg-light sticky-top py-2">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/icon web.jpg" alt="logo" witdh="40" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="nasional.html">Nasional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Internasional.html">Internasional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Olahraga.html">Olahraga</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Lainnya
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Hiburan.html">Hiburan</a></li>
+              <li><a class="dropdown-item" href="Ekonomi.html">Ekonomi</a></li>
+              <li><a class="dropdown-item" href="Teknologi.html">Teknologi</a></li>
+              <li><a class="dropdown-item" href="Gayahidup.html">Gaya Hidup</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Search button-->
+        <a href="#" dtr-evt="header" dtr-sec="search" dtr-act="search" onclick="_pt(this)"></i></a>
+        <form action="https://www.cnnindonesia.com/search/" id="search_form" method="get" class="d-flex" role="search"
+          style="padding-right:5px; py-2">
+          <input class="form-control me-2" type="text" name="query" placeholder="Search ANC" aria-label="Search"
+            required="">
+          <button class="btn btn-primary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg></button>
+        </form>
+        <!-- Login -->
+        <div class="dropdown py-2">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+              class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+            </svg>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="Login.html">Login</a></li>
+            <li><a class="dropdown-item" href="Register.html">Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="container">
+    <div class="row pt-3">
+      <div class="col-sm-12 col-md-8 col-lg-8 pt-2">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/nasional/carousel1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/nasional/carousel2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/nasional/carousel3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Membuat scroll berita serupa -->
+      <div class="col-sm-12 col-md-4 col-lg-4 mb-2">
+        <h3>Terpopuler</h3>
+        <div class="cardscroll mb-3" style="height: 70vh; border: 2px solid lightgrey;">
+          <div class="isicard" style="height:100%; overflow:auto">
+            <ol class="list-group-numbered">
+              <li class="list-group-item">
+                <a href="https://www.cnnindonesia.com/nasional/20220716144857-20-822393/banjir-cawang-mulai-surut-usai-sempat-capai-ketinggian-2-meter"
+                  style="text-decoration: none; color: black;">
+                  <h5 class="card-text">Banjir Cawang Mulai Surut usai Sempat Capai Ketinggian 2 Meter</h5>
+                </a>
+                <p class="card-text"><small class="text-danger">Nasional</small><small class="text-muted"> - 10 menit
+                    yang lalu</small></p>
+              </li>
+              <li class="list-group-item">
+                <a href="https://www.cnnindonesia.com/nasional/20220716144201-16-822384/video-bubarkan-tawuran-di-maluku-polisi-kena-panah-di-kepala"
+                  style="text-decoration: none; color: black;">
+                  <h5 class="card-text">Bubarkan Tawuran di Maluku, Polisi Kena Panah di Kepala</h5>
+                </a>
+                <p class="card-text"><small class="text-danger">Nasional</small><small class="text-muted"> - 30 menit
+                    yang lalu</small></p>
+              </li>
+              <li class="list-group-item">
+                <a href="https://www.cnnindonesia.com/nasional/20220716140221-12-822379/poin-putusan-setop-produksi-ms-glow-menghilang-di-website-pn-surabaya"
+                  style="text-decoration: none; color: black;">
+                  <h5 class="card-text">Poin Putusan Setop Produksi MS Glow Menghilang di Website PN Surabaya</h5>
+                </a>
+                <p class="card-text"><small class="text-danger">Nasional</small><small class="text-muted"> - 50 menit
+                    yang lalu</small></p>
+              </li>
+              <li class="list-group-item">
+                <a href="https://www.cnnindonesia.com/nasional/20220716160808-20-822402/14-kecamatan-di-jakarta-yang-dikepung-banjir"
+                  style="text-decoration: none; color: black;">
+                  <h5 class="card-text">14 Kecamatan di Jakarta yang Dikepung Banjir</h5>
+                </a>
+                <p class="card-text"><small class="text-danger">Nasional</small><small class="text-muted"> - 1 jam yang
+                    lalu</small></p>
+              </li>
+              <li class="list-group-item">
+                <a href="https://www.tribunnews.com/regional/2022/07/16/penduduk-miskin-di-jateng-berkurang-102-ribu-orang"
+                  style="text-decoration: none; color: black;">
+                  <h5 class="card-text">Penduduk Miskin di Jateng Berkurang 102 Ribu Orang</h5>
+                </a>
+                <p class="card-text"><small class="text-danger">Nasional</small><small class="text-muted"> - 1 jam yang
+                    lalu</small></p>
+              </li>
+              <li class="list-group-item">
+                <a href="https://www.kompas.tv/article/309789/hasil-singapore-open-2022-apriyani-fadia-tembus-final-lagi"
+                  style="text-decoration: none; color: black;">
+                  <h5 class="card-text">Hasil Singapore Open 2022: Apriyani/Fadia Tembus Final Lagi</h5>
+                </a>
+                <p class="card-text"><small class="text-danger">Nasional</small><small class="text-muted"> - 2 jam yang
+                    lalu</small></p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Membuat berita berjejer -->
+    <div class="row pt-2" style="background-color: lightgray;">
+      <h3>Topik Terkini</h3>
+      <div class="col-sm-12 col-md-4 col-lg-2">
+        <div class="cardho mb-2">
+          <a href="https://www.cnnindonesia.com/nasional/20220718171712-12-823005/polisi-ustaz-dan-pendeta-jadi-korban-tewas-penembakan-di-nduga-papua"
+            class="card-link" style="text-decoration: none; color: black;">
+            <img src="images/nasional/topikterkini1.jpeg" class="card-img-top mb-2" alt="Berita Olahraga">
+            <h6 class="card-text">Polisi: Ustaz dan Pendeta Jadi Korban Tewas Penembakan di Nduga Papua</h6>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-2">
+        <div class="cardho mb-2">
+          <a href="https://www.cnnindonesia.com/nasional/20220718193112-12-823059/kecelakaan-maut-cibubur-sopir-truk-pertamina-diperiksa-polisi"
+            class="card-link" style="text-decoration: none; color: black;">
+            <img src="images/nasional/topikterkini2.jpeg" class="card-img-top mb-2" alt="Berita Olahraga">
+            <h6 class="card-text">Kecelakaan Maut Cibubur, Sopir Truk Pertamina Diperiksa Polisi</h6>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-2">
+        <div class="cardho mb-2">
+          <a href="https://www.cnnindonesia.com/nasional/20220718172330-20-823007/airlangga-soal-dki-level-3-transmisi-covid-bor-masih-rendah"
+            class="card-link" style="text-decoration: none; color: black;">
+            <img src="images/nasional/topikterkini3.jpeg" class="card-img-top mb-2" alt="Berita Olahraga">
+            <h6 class="card-text">Airlangga Soal DKI Level 3 Transmisi Covid: BOR Masih Rendah</h6>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-2">
+        <div class="cardho mb-2">
+          <a href="https://www.cnnindonesia.com/nasional/20220718183543-12-823038/hakim-tolak-eksepsi-3-terdakwa-pengeroyokan-ade-armando"
+            class="card-link" style="text-decoration: none; color: black;">
+            <img src="images/nasional/topikterkini4.jpeg" class="card-img-top mb-2" alt="Berita Olahraga">
+            <h6 class="card-text">Hakim Tolak Eksepsi 3 Terdakwa Pengeroyokan Ade Armando</h6>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-2">
+        <div class="cardho mb-2">
+          <a href="https://www.cnnindonesia.com/nasional/20220718182238-12-823033/miliki-204-gram-ganja-anak-anggota-dprd-bali-jadi-tersangka"
+            class="card-link" style="text-decoration: none; color: black;">
+            <img src="images/nasional/topikterkini5.jpg" class="card-img-top mb-2" alt="Berita Olahraga">
+            <h6 class="card-text">Miliki 204 Gram Ganja, Anak Anggota DPRD Bali Jadi Tersangka</h6>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-2">
+        <div class="cardho mb-2">
+          <a href="https://www.cnnindonesia.com/nasional/20220718174727-12-823022/putusan-setop-produksi-ms-glow-lenyap-pn-surabaya-turun-tangan"
+            class="card-link" style="text-decoration: none; color: black;">
+            <img src="images/nasional/topikterkini6.jpeg" class="card-img-top mb-2" alt="Berita Olahraga">
+            <h6 class="card-text">Putusan Setop Produksi MS Glow Lenyap, PN Surabaya Turun Tangan</h6>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Konten Berita Menurun-->
+    <div class="row pt-3">
+      <h3>Terbaru</h3>
+      <div class="col-sm-12 col-md-12 col-lg-3 pt-1">
+        <img src="images/nasional/menurun1.jpeg" alt="berita" width="270px" height="170px" class="img-fluid">
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-5 py-4">
+        <a href="https://www.cnnindonesia.com/nasional/20220718211819-20-823093/pendataan-korban-kecelakaan-truk-pertamina-dijanjikan-kelar-malam-ini"
+          class="card-link" style="text-decoration: none; color: black;">
+          <h4 class="card-text">Pendataan Korban Kecelakaan Truk Pertamina Dijanjikan Kelar Malam Ini</h4>
+        </a>
+        <p class="card-text pt-2"><small class="text-danger">Nasional</small><small class="text-muted"> - 12 menit yang
+            lalu</small></p>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <iframe width="270" height="150" src="https://www.youtube.com/embed/SzEmo8l-3Ag" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    </div>
+
+
+    <div class="row pt-3">
+      <div class="col-sm-12 col-md-12 col-lg-3 pt-1">
+        <img src="images/nasional/menurun2.jpg" alt="berita" width="270px" height="170px" class="img-fluid">
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-5 py-5">
+        <a href="https://www.cnnindonesia.com/nasional/20220718205206-20-823088/pesawat-jatuh-di-blora-jawa-tengah"
+          class="card-link" style="text-decoration: none; color: black;">
+          <h4 class="card-text">Pesawat Jatuh di Blora Jawa Tengah</h4>
+        </a>
+        <p class="card-text pt-2"><small class="text-danger">Nasional</small><small class="text-muted"> - 18 menit yang
+            lalu</small></p>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <iframe width="270" height="150" src="https://www.youtube.com/embed/rurkKRDl-j8" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    </div>
+
+    <div class="row pt-3">
+      <div class="col-sm-12 col-md-8 col-lg-3 pt-1">
+        <img src="images/nasional/menurun3.jpeg" alt="berita" width="270px" height="170px" class="img-fluid">
+      </div>
+
+      <div class="col-sm-12 col-md-8 col-lg-5 py-4">
+        <a href="https://www.cnnindonesia.com/nasional/20220718170053-20-822999/satgas-covid-bali-ungkap-kondisi-pasien-varian-centaurus"
+          class="card-link" style="text-decoration: none; color: black;">
+          <h4 class="card-text">Satgas Covid Bali Ungkap Kondisi Pasien Varian Centaurus</h4>
+        </a>
+        <p class="card-text pt-2"><small class="text-danger">Nasional</small><small class="text-muted"> - 29 menit yang
+            lalu</small></p>
+      </div>
+    </div>
+
+    <div class="row pt-3">
+      <div class="col-sm-12 col-md-8 col-lg-3 pt-1">
+        <img src="images/nasional/menurun4.jpeg" alt="berita" width="270px" height="170px" class="img-fluid">
+      </div>
+
+      <div class="col-sm-12 col-md-8 col-lg-5 py-4">
+        <a href="https://www.cnnindonesia.com/nasional/20220718165308-20-822993/gunung-anak-krakatau-erupsi-lagi-kolom-abu-2500-meter"
+          class="card-link" style="text-decoration: none; color: black;">
+          <h4 class="card-text">Gunung Anak Krakatau Erupsi Lagi, Kolom Abu 2500 Meter</h4>
+        </a>
+        <p class="card-text pt-2"><small class="text-danger">Nasional</small><small class="text-muted"> - 35 menit yang
+            lalu</small></p>
+      </div>
+    </div>
+
+    <div class="row pt-3">
+      <div class="col-sm-12 col-md-8 col-lg-3 pt-1">
+        <img src="images/nasional/menurun5.jpeg" alt="berita" width="270px" height="170px" class="img-fluid">
+      </div>
+
+      <div class="col-sm-12 col-md-8 col-lg-5 py-4">
+        <a href="https://www.cnnindonesia.com/nasional/20220718154910-12-822977/keluarga-brigadir-j-enggan-laporkan-bharada-e-pelaku-bukan-satu-orang"
+          class="card-link" style="text-decoration: none; color: black;">
+          <h4 class="card-text">Keluarga Brigadir J Enggan Laporkan Bharada E: Pelaku Bukan Satu Orang</h4>
+        </a>
+        <p class="card-text pt-2"><small class="text-danger">Nasional</small><small class="text-muted"> - 40 menit yang
+            lalu</small></p>
+      </div>
+    </div>
+
+    <div class="row pt-3">
+      <div class="col-sm-12 col-md-8 col-lg-3 pt-1">
+        <img src="images/nasional/menurun6.jpeg" alt="berita" width="270px" height="170px" class="img-fluid">
+      </div>
+
+      <div class="col-sm-12 col-md-8 col-lg-5 py-4">
+        <a href="https://www.cnnindonesia.com/nasional/20220718124853-32-822851/survei-lanskap-prabowo-dominan-di-jatim-ganjar-unggul-di-jateng"
+          class="card-link" style="text-decoration: none; color: black;">
+          <h4 class="card-text">Survei Lanskap: Prabowo Dominan di Jatim, Ganjar Unggul di Jateng</h4>
+        </a>
+        <p class="card-text pt-2"><small class="text-danger">Nasional</small><small class="text-muted"> - 48 menit yang
+            lalu</small></p>
+      </div>
+    </div>
+
+    <div class="row pt-3">
+      <div class="col-sm-12 col-md-8 col-lg-3 pt-1">
+        <img src="images/nasional/menurun7.jpeg" alt="berita" width="270px" height="170px" class="img-fluid">
+      </div>
+
+      <div class="col-sm-12 col-md-8 col-lg-5 py-4">
+        <a href="https://www.cnnindonesia.com/nasional/20220718145141-20-822931/karhutla-di-tapanuli-utara-1-orang-meninggal-saat-padamkan-api"
+          class="card-link" style="text-decoration: none; color: black;">
+          <h4 class="card-text">Karhutla di Tapanuli Utara, 1 Orang Meninggal Saat Padamkan Api</h4>
+        </a>
+        <p class="card-text pt-2"><small class="text-danger">Nasional</small><small class="text-muted"> - 58 menit yang
+            lalu</small></p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="col-sm-8 col-md-8 col-lg-8" style="text-align: center;">
+      <div class="button">
+        <a href="https://www.cnnindonesia.com/indeks" class="btn btn-danger">Indeks Berita</a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark" style="margin-top: 2em">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Amikom Universal, ANC name, logo and all associated
+        elements (R) and &copy; 2022 Amikom News Corporation, Inc. A Time Warner Company. All rights reserved. ANC and
+        the ANC logo are registered marks of Amikom News Corporation, Inc., displayed with permission.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap bundel With Popper -->
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/popper.min.js"></script>
+
+</body>
+
+</html>

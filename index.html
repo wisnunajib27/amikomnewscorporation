@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Amikom News Corporation">
+  <link rel="shortcut icon" href="images/icon web.jpg" type="image/x-icon">
+  <title>ANC - Berita Terbaru, Terkini, dan Dunia</title>
+
+  <style>
+    /* Membuat gambar carousel responsi */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Membuat Hover scale */
+    .cardho {
+      overflow: hidden;
+    }
+
+    .cardho:hover img {
+      transform: scale(1.1);
+      transition: all .3s ease-in;
+    }
+  </style>
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Banner Atas -->
+  <div id="leaderboard" class="leaderboard">
+    <div class="leaderboard_container">
+      <img src="images/banner.png" alt="banner" width="100%" class="img-fluid">
+    </div>
+  </div>
+
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg bg-light sticky-top py-2">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/icon web.jpg" alt="logo" witdh="40" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nasional.html">Nasional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Internasional.html">Internasional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Olahraga.html">Olahraga</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Lainnya
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Hiburan.html">Hiburan</a></li>
+              <li><a class="dropdown-item" href="Ekonomi.html">Ekonomi</a></li>
+              <li><a class="dropdown-item" href="Teknologi.html">Teknologi</a></li>
+              <li><a class="dropdown-item" href="Gayahidup.html">Gaya Hidup</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Search button-->
+        <a href="#" dtr-evt="header" dtr-sec="search" dtr-act="search" onclick="_pt(this)"></i></a>
+        <form action="https://www.cnnindonesia.com/search/" id="search_form" method="get" class="d-flex" role="search"
+          style="padding-right:5px; py-2">
+          <input class="form-control me-2" type="text" name="query" placeholder="Search ANC" aria-label="Search"
+            required="">
+          <button class="btn btn-primary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg></button>
+        </form>
+        <!-- Login -->
+        <div class="dropdown py-2">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+              class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+            </svg>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="Login.html">Login</a></li>
+            <li><a class="dropdown-item" href="Register.html">Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Membuat Header -->
+
+  <!-- Konten Utama -->
+  <div class="container">
+    <div class="row pt-3">
+      <div class="col-sm-12 col-md-12 col-lg-6">
+        <div id="carouselExampleCaptions" class="carousel slide p-1 mb-3" data-bs-ride="false"
+          style="border: 2px solid lightgrey;">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/carousel1_1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/carousel1_2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/carousel1_3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Rekomendasi Berita -->
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-2">
+        <div class="cardho mb-2">
+          <a href="berita1.html" class="card-link">
+            <img src="images/rekomendasi1.jpg" class="card-img-top" alt="Berita Olahraga">
+          </a>
+        </div>
+
+        <div class="cardho">
+          <a href="berita3.html" class="card-link">
+            <img src="images/rekomendasi2.jpg" class="card-img-top" alt="Berita Olahraga">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="cardho mb-2">
+          <a href="berita2.html" class="card-link">
+            <img src="images/rekomendasi3.jpg" class="card-img-top" alt="Berita Olahraga">
+          </a>
+        </div>
+
+        <div class="cardho">
+          <a href="berita4.html" class="card-link">
+            <img src="images/rekomendasi4.jpg" class="card-img-top" alt="Berita Olahraga">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Konten Berita Terupdate-->
+    <div class="row py-2">
+      <hr>
+      <h3 class="text-primary">Berita Terupdate</h3>
+      <div class="col-md-6 col-lg-4">
+        <div class="card mb-3" style="width: 19rem;">
+          <img src="images/terupdate3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Penembakan Istri Anggota TNI di Semarang, Diikuti Pelaku Setelah Jemput Anak</h5>
+            <p class="card-text">Seorang istri anggota TNI menjadi sasaran penembakan dua orang misterius di rumahnya.
+            </p>
+            <a href="https://regional.kompas.com/read/2022/07/18/192301178/kronologi-penembakan-istri-anggota-tni-di-semarang-diikuti-pelaku-setelah"
+              class="btn btn-primary">Baca Selengkapnya</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">5 menit yang lalu</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card mb-3" style="width: 19rem;">
+          <img src="images/terupdate2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tanggapan Malaysia Setelah Indonesia Setop Kirim TKI ke Negeri Jiran</h5>
+            <p class="card-text">Pemerintah Malaysia memberikan tanggapan setelah Indonesia setop kirim TKI ke Malaysia.
+            </p>
+            <a href="https://www.kompas.com/global/read/2022/07/18/192900670/tanggapan-malaysia-setelah-indonesia-setop-kirim-tki-ke-negeri-jiran"
+              class="btn btn-primary">Baca Selengkapnya</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">50 menit yang lalu</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card mb-3" style="width: 19rem;">
+          <img src="images/terupdate1.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kecelakaan Maut Truk BBM di Cibubur, Pertamina Akan Bertanggung Jawab</h5>
+            <p class="card-text">Kecelakaan maut truk BBM Pertamina yang menabrak sejumlah pengendara sepeda motor di
+              Cibubur</p>
+            <a href="https://otomotif.kompas.com/read/2022/07/18/193100515/kecelakaan-maut-truk-bbm-di-cibubur-pertamina-akan-bertanggung-jawab"
+              class="btn btn-primary">Baca Selengkapnya</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">20 menit yang lalu</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card mb-3" style="width: 19rem;">
+          <img src="images/terupdate4.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Terkait Zonasi Sekolah, Bupati Jekek: Jangan Hanya Murid, Guru Juga Diputar</h5>
+            <p class="card-text">sistem zonasi sekolah atau jalur penerimaan siswa berdasarkan zona tempat tinggal
+              dilakukan untuk pemerataan kualitas pendidikan.</p>
+            <a href="https://regional.kompas.com/read/2022/07/18/19201291/terkait-zonasi-sekolah-bupati-jekek-jangan-hanya-murid-guru-juga-diputar"
+              class="btn btn-primary">Baca Selengkapnya</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">40 menit yang lalu</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card mb-3" style="width: 19rem;">
+          <img src="images/terupdate5.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Evaluasi PBSI dari Malaysia Open hingga Singapore Open 2022</h5>
+            <p class="card-text">Kabid Binpres PSSI, Rionny Mainaky, mengaku puas dengan pencapaian tim bulu tangkis
+              Indonesia di tur Asia Tenggara.</p>
+            <a href="https://www.kompas.com/badminton/read/2022/07/18/19200038/evaluasi-pbsi-dari-malaysia-open-hingga-singapore-open-2022"
+              class="btn btn-primary">Baca Selengkapnya</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">10 menit yang lalu</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card" style="width: 19rem;">
+          <img src="images/terupdate6.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kasus Covid-19 di Bali Meningkat, Sekda: Ini Risiko yang Harus Kita Hadapi</h5>
+            <p class="card-text">Sekertaris Daerah (Sekda) Bali Dewa Made Indra mengatakan, kasus Covid-19 di Pulau
+              Dewata meningkat beberapa pekan terakhir.</p>
+            <a href="https://denpasar.kompas.com/read/2022/07/18/192927278/kasus-covid-19-di-bali-meningkat-sekda-ini-risiko-yang-harus-kita-hadapi"
+              class="btn btn-primary">Baca Selengkapnya</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">3 menit yang lalu</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide Gambar ke 2-->
+    <div class="row pt-2">
+      <hr>
+      <div class="col-sm-12 col-md-12 col-lg-12 pt-2">
+        <div id="carouselExampleIndicators" class="carousel slide p-1 mb-3" data-bs-ride="true"
+          style="border: 2px solid lightgrey;">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/corousel2_1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/corousel2_2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/corousel2_3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Konten Berita Terpopuler-->
+    <div class="row pt-2">
+      <hr>
+      <h3 class="py-1 text-primary">Berita Terpopuler</h3>
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-2">
+        <div class="cardho mb-2">
+          <a href="https://www.cnnindonesia.com/olahraga/20220718141134-142-822894/pelaku-tendangan-kungfu-di-final-piala-presiden-minta-maaf"
+            class="card-link">
+            <img src="images/terpopuler1.jpg" class="card-img-top" alt="Berita Olahraga">
+          </a>
+        </div>
+
+        <div class="cardho">
+          <a href="https://www.cnnindonesia.com/nasional/20220718134025-12-822870/penumpang-tewas-tertabrak-transjakarta-polisi-duga-sopir-lalai"
+            class="card-link">
+            <img src="images/terpopuler2.jpg" class="card-img-top" alt="Berita Olahraga">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="cardho mb-2">
+          <a href="https://www.cnnindonesia.com/ekonomi/20220718140804-92-822892/zulhas-targetkan-harga-tbs-sawit-naik-jadi-rp2400-per-kg"
+            class="card-link">
+            <img src="images/terpopuler3.jpg" class="card-img-top" alt="Berita Olahraga">
+          </a>
+        </div>
+
+        <div class="cardho mb-2">
+          <a href="https://www.cnnindonesia.com/nasional/20220718140120-12-822893/kuasa-hukum-jamin-ferdy-sambo-bakal-penuhi-panggilan-komnas-ham"
+            class="card-link">
+            <img src="images/terpopuler4.jpg" class="card-img-top" alt="Berita Olahraga">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-2">
+        <div class="cardho mb-2">
+          <a href="https://www.cnnindonesia.com/internasional/20220718124128-113-822850/xi-jinping-ke-kampung-uighur-islam-di-china-harus-berdasar-sosialis"
+            class="card-link">
+            <img src="images/terpopuler5.jpg" class="card-img-top" alt="Berita Olahraga">
+          </a>
+        </div>
+
+        <div class="cardho">
+          <a href="https://www.cnnindonesia.com/ekonomi/20220718133637-92-822868/ps-glow-sebut-ms-glow-pernah-minta-uang-damai-rp60-m-soal-merek"
+            class="card-link">
+            <img src="images/terpopuler6.jpg" class="card-img-top" alt="Berita Olahraga">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="cardho mb-2">
+          <a href="https://www.cnnindonesia.com/olahraga/20220718135954-142-822886/benzema-vs-lewandowski-ronaldo-vs-messi-baru"
+            class="card-link">
+            <img src="images/terpopuler7.jpg" class="card-img-top" alt="Berita Olahraga">
+          </a>
+        </div>
+
+        <div class="cardho">
+          <a href="https://www.cnnindonesia.com/olahraga/20220718125532-183-822855/belajar-dari-kesalahan-ambisi-demetrious-johnson-hajar-adriano-moraes"
+            class="card-link">
+            <img src="images/terpopuler8.jpg" class="card-img-top" alt="Berita Olahraga">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nasional Terkini and Internasional Update dan video berita-->
+    <div class="row pt-3">
+      <hr>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <h1 class="py-1 text-primary">Internasional Update</h1>
+        <div class="list-group">
+          <a href="https://dunia.tempo.co/read/1613420/meski-terdampak-secara-ekonomi-uni-eropa-tetap-dukung-ukraina"
+            class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Meski Terdampak Secara Ekonomi, Uni Eropa Tetap Dukung Ukraina</h5>
+            </div>
+            <small class="text-muted">1 hari yang lalu</small>
+          </a>
+          <a href="https://dunia.tempo.co/read/1613361/presiden-sri-lanka-hanya-diizinkan-tinggal-di-singapura-15-hari"
+            class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Presiden Sri Lanka Hanya Diizinkan Tinggal di Singapura 15 Hari</h5>
+            </div>
+            <small class="text-muted">3 hari yang lalu</small>
+          </a>
+          <a href="https://foto.tempo.co/read/98858/penampakan-gedung-gedung-di-kharkiv-hancur-pasca-dibombardir-rusia"
+            class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Penampakan Gedung-gedung di Kharkiv Hancur Pasca Dibombardir Rusia</h5>
+            </div>
+            <small class="text-muted">5 hari yang lalu</small>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <h1 class="py-1 text-primary">Nasional Terkini</h1>
+        <ul class="list-group">
+          <a href="Olahraga.html" class="list-group-item list-group-item-action">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Olahraga</div>
+                Update terbaru
+              </div>
+              <span class="badge bg-primary rounded-pill">14</span>
+            </li>
+          </a>
+          <a href="Ekonomi.html" class="list-group-item list-group-item-action">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Ekonomi</div>
+                Update terbaru
+              </div>
+              <span class="badge bg-primary rounded-pill">10</span>
+            </li>
+          </a>
+          <a href="Gayahidup.html" class="list-group-item list-group-item-action">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Gaya Hidup</div>
+                Update terbaru
+              </div>
+              <span class="badge bg-primary rounded-pill">5</span>
+            </li>
+          </a>
+          <a href="Teknologi.html" class="list-group-item list-group-item-action">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Teknologi</div>
+                Update terbaru
+              </div>
+              <span class="badge bg-primary rounded-pill">8</span>
+            </li>
+          </a>
+          <a href="Politik.html" class="list-group-item list-group-item-action">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Politik</div>
+                Update terbaru
+              </div>
+              <span class="badge bg-primary rounded-pill">5</span>
+            </li>
+          </a>
+          <a href="https://health.kompas.com/" class="list-group-item list-group-item-action">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Kesehatan</div>
+                Update terbaru
+              </div>
+              <span class="badge bg-primary rounded-pill">10</span>
+            </li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-3 pt-2">
+        <iframe class="pt-2" width="560" height="315" src="https://www.youtube.com/embed/8QObf_JeNbo"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_vcbTmWhEqM" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    </div>
+
+    <!-- Konten statistik berita-->
+    <div class="row pt-3">
+      <hr>
+      <h3 class="text-primary">Paling Banyak Dicari</h3>
+      <p>Berikut merupakan persentasi pencarian berita dalam 5 bulan terakhir</p>
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col" colspan="2" style="text-align: center;">Periode</th>
+              <th scope="col" colspan="4" style="text-align: center;">Persentase Pencarian</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="text-align: center;">
+              <th scope="row">No</th>
+              <th>Bulan</th>
+              <th>Olahraga</th>
+              <th>Kesehatan</th>
+              <th>Politik</th>
+              <th>Gaya Hidup</th>
+            </tr>
+            <tr>
+              <td scope="row">1</td>
+              <td>Maret</td>
+              <td>50%</td>
+              <td>25%</td>
+              <td>10%</td>
+              <td>15%</td>
+            </tr>
+            <tr>
+              <td scope="row">2</td>
+              <td>April</td>
+              <td>10%</td>
+              <td>60%</td>
+              <td>15%</td>
+              <td>15%</td>
+            </tr>
+            <tr>
+              <td scope="row">3</td>
+              <td>Mei</td>
+              <td>40%</td>
+              <td>20%</td>
+              <td>15%</td>
+              <td>25%</td>
+            </tr>
+            <tr>
+              <td scope="row">4</td>
+              <td>Juni</td>
+              <td>20%</td>
+              <td>50%</td>
+              <td>16%</td>
+              <td>14%</td>
+            </tr>
+            <tr>
+              <td scope="row">5</td>
+              <td>Juli</td>
+              <td>70%</td>
+              <td>5%</td>
+              <td>10%</td>
+              <td>15%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark" style="margin-top: 2em">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Amikom Universal, ANC name, logo and all associated
+        elements (R) and &copy; 2022 Amikom News Corporation, Inc. A Time Warner Company. All rights reserved. ANC and
+        the ANC logo are registered marks of Amikom News Corporation, Inc., displayed with permission.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap bundel With Popper -->
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/popper.min.js"></script>
+
+</body>
+
+</html>
